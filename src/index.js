@@ -56,6 +56,8 @@ document.onmousemove = document.ontouchmove = document.ontouchstart = function (
   const height = window.innerHeight|| document.documentElement.clientHeight||
     document.body.clientHeight;
 
+  const x = e.clientX || e.pageX
+
   const ratio = (e.clientX + e.clientY) / (width + height)
   const max = 359;
 
