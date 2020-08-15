@@ -49,7 +49,7 @@ function render(hue, x, y) {
   ctx.globalCompositeOperation = "source-over";
 }
 
-document.onmousemove = function (e) {
+document.onmousemove = document.ontouchmove = document.ontouchstart = function (e) {
   // https://stackoverflow.com/a/11744120
   const width  = window.innerWidth || document.documentElement.clientWidth ||
     document.body.clientWidth;
